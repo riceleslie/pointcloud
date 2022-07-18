@@ -1,0 +1,184 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+CosineWarmupLR	train_utils/optimization/__init__.py	/^from .learning_schedules_fastai import CosineWarmupLR, OneCycle$/;"	i
+CosineWarmupLR	train_utils/optimization/learning_schedules_fastai.py	/^class CosineWarmupLR(lr_sched._LRScheduler):$/;"	c
+DatasetTemplate	demo.py	/^from pcdet.datasets import DatasetTemplate$/;"	i
+DemoDataset	demo.py	/^class DemoDataset(DatasetTemplate):$/;"	c
+FakeOptim	train_utils/optimization/learning_schedules_fastai.py	/^class FakeOptim:$/;"	c
+FastAIMixedOptim	train_utils/optimization/fastai_optim.py	/^class FastAIMixedOptim(OptimWrapper):$/;"	c
+Iterable	train_utils/optimization/fastai_optim.py	/^from collections import Iterable$/;"	i
+LRSchedulerStep	train_utils/optimization/learning_schedules_fastai.py	/^class LRSchedulerStep(object):$/;"	c
+OneCycle	train_utils/optimization/__init__.py	/^from .learning_schedules_fastai import CosineWarmupLR, OneCycle$/;"	i
+OneCycle	train_utils/optimization/learning_schedules_fastai.py	/^class OneCycle(LRSchedulerStep):$/;"	c
+OptimWrapper	train_utils/optimization/__init__.py	/^from .fastai_optim import OptimWrapper$/;"	i
+OptimWrapper	train_utils/optimization/fastai_optim.py	/^class OptimWrapper():$/;"	c
+OptimWrapper	train_utils/optimization/learning_schedules_fastai.py	/^from .fastai_optim import OptimWrapper$/;"	i
+Path	demo.py	/^from pathlib import Path$/;"	i
+Path	test.py	/^from pathlib import Path$/;"	i
+Path	train.py	/^from pathlib import Path$/;"	i
+SummaryWriter	test.py	/^from tensorboardX import SummaryWriter$/;"	i
+SummaryWriter	train.py	/^from tensorboardX import SummaryWriter$/;"	i
+__getattr__	train_utils/optimization/fastai_optim.py	/^    def __getattr__(self, k: str):$/;"	m	class:OptimWrapper	file:
+__getitem__	demo.py	/^    def __getitem__(self, index):$/;"	m	class:DemoDataset	file:
+__init__	demo.py	/^    def __init__(self, dataset_cfg, class_names, training=True, root_path=None, logger=None, ext='.bin'):$/;"	m	class:DemoDataset
+__init__	train_utils/optimization/fastai_optim.py	/^    def __init__(self, opt, wd, true_wd: bool = False, bn_wd: bool = True):$/;"	m	class:OptimWrapper
+__init__	train_utils/optimization/learning_schedules_fastai.py	/^    def __init__(self):$/;"	m	class:FakeOptim
+__init__	train_utils/optimization/learning_schedules_fastai.py	/^    def __init__(self, fai_optimizer, total_step, lr_max, moms, div_factor,$/;"	m	class:OneCycle
+__init__	train_utils/optimization/learning_schedules_fastai.py	/^    def __init__(self, fai_optimizer: OptimWrapper, total_step, lr_phases,$/;"	m	class:LRSchedulerStep
+__init__	train_utils/optimization/learning_schedules_fastai.py	/^    def __init__(self, optimizer, T_max, eta_min=0, last_epoch=-1):$/;"	m	class:CosineWarmupLR
+__len__	demo.py	/^    def __len__(self):$/;"	m	class:DemoDataset	file:
+__repr__	train_utils/optimization/fastai_optim.py	/^    def __repr__(self) -> str:$/;"	m	class:OptimWrapper	file:
+_unflatten_dense_tensors	train_utils/optimization/fastai_optim.py	/^from torch._utils import _unflatten_dense_tensors$/;"	i
+annealing_cos	train_utils/optimization/learning_schedules_fastai.py	/^def annealing_cos(start, end, pct):$/;"	f
+argparse	demo.py	/^import argparse$/;"	i
+argparse	test.py	/^import argparse$/;"	i
+argparse	train.py	/^import argparse$/;"	i
+beta	train_utils/optimization/fastai_optim.py	/^    def beta(self) -> float:$/;"	m	class:OptimWrapper
+beta	train_utils/optimization/fastai_optim.py	/^    def beta(self, val: float) -> None:$/;"	m	class:OptimWrapper
+bn_types	train_utils/optimization/fastai_optim.py	/^bn_types = (nn.BatchNorm1d, nn.BatchNorm2d, nn.BatchNorm3d, nn.SyncBatchNorm)$/;"	v
+box_colormap	visual_utils/visualize_utils.py	/^box_colormap = [$/;"	v
+boxes_to_corners_3d	visual_utils/visualize_utils.py	/^def boxes_to_corners_3d(boxes3d):$/;"	f
+build_dataloader	test.py	/^from pcdet.datasets import build_dataloader$/;"	i
+build_dataloader	train.py	/^from pcdet.datasets import build_dataloader$/;"	i
+build_network	demo.py	/^from pcdet.models import build_network, load_data_to_gpu$/;"	i
+build_network	test.py	/^from pcdet.models import build_network$/;"	i
+build_network	train.py	/^from pcdet.models import build_network, model_fn_decorator$/;"	i
+build_optimizer	train.py	/^from train_utils.optimization import build_optimizer, build_scheduler$/;"	i
+build_optimizer	train_utils/optimization/__init__.py	/^def build_optimizer(model, optim_cfg):$/;"	f
+build_scheduler	train.py	/^from train_utils.optimization import build_optimizer, build_scheduler$/;"	i
+build_scheduler	train_utils/optimization/__init__.py	/^def build_scheduler(optimizer, total_iters_each_epoch, total_epochs, last_epoch, optim_cfg):$/;"	f
+cfg	demo.py	/^from pcdet.config import cfg, cfg_from_yaml_file$/;"	i
+cfg	test.py	/^from pcdet.config import cfg, cfg_from_list, cfg_from_yaml_file, log_config_to_file$/;"	i
+cfg	train.py	/^from pcdet.config import cfg, cfg_from_list, cfg_from_yaml_file, log_config_to_file$/;"	i
+cfg_from_list	test.py	/^from pcdet.config import cfg, cfg_from_list, cfg_from_yaml_file, log_config_to_file$/;"	i
+cfg_from_list	train.py	/^from pcdet.config import cfg, cfg_from_list, cfg_from_yaml_file, log_config_to_file$/;"	i
+cfg_from_yaml_file	demo.py	/^from pcdet.config import cfg, cfg_from_yaml_file$/;"	i
+cfg_from_yaml_file	test.py	/^from pcdet.config import cfg, cfg_from_list, cfg_from_yaml_file, log_config_to_file$/;"	i
+cfg_from_yaml_file	train.py	/^from pcdet.config import cfg, cfg_from_list, cfg_from_yaml_file, log_config_to_file$/;"	i
+check_numpy_to_torch	visual_utils/visualize_utils.py	/^def check_numpy_to_torch(x):$/;"	f
+checkpoint_state	train_utils/train_utils.py	/^def checkpoint_state(model=None, optimizer=None, epoch=None, it=None):$/;"	f
+children	train_utils/optimization/__init__.py	/^        def children(m: nn.Module):$/;"	f	function:build_optimizer
+clear	train_utils/optimization/fastai_optim.py	/^    def clear(self):$/;"	m	class:OptimWrapper
+clip_grad_norm_	train_utils/train_utils.py	/^from torch.nn.utils import clip_grad_norm_$/;"	i
+common_utils	demo.py	/^from pcdet.utils import common_utils$/;"	i
+common_utils	eval_utils/eval_utils.py	/^from pcdet.utils import common_utils$/;"	i
+common_utils	test.py	/^from pcdet.utils import common_utils$/;"	i
+common_utils	train.py	/^from pcdet.utils import common_utils$/;"	i
+create	train_utils/optimization/fastai_optim.py	/^    def create(cls, opt_func, lr,$/;"	m	class:FastAIMixedOptim
+create	train_utils/optimization/fastai_optim.py	/^    def create(cls, opt_func, lr,$/;"	m	class:OptimWrapper
+datetime	test.py	/^import datetime$/;"	i
+datetime	train.py	/^import datetime$/;"	i
+dist	train.py	/^import torch.distributed as dist$/;"	i
+draw_corners3d	visual_utils/visualize_utils.py	/^def draw_corners3d(corners3d, fig, color=(1, 1, 1), line_width=2, cls=None, tag='', max_num=500, tube_radius=None):$/;"	f
+draw_grid	visual_utils/visualize_utils.py	/^def draw_grid(x1, y1, x2, y2, fig, tube_radius=None, color=(0.5, 0.5, 0.5)):$/;"	f
+draw_multi_grid_range	visual_utils/visualize_utils.py	/^def draw_multi_grid_range(fig, grid_size=20, bv_range=(-60, -60, 60, 60)):$/;"	f
+draw_scenes	visual_utils/visualize_utils.py	/^def draw_scenes(points, gt_boxes=None, ref_boxes=None, ref_scores=None, ref_labels=None):$/;"	f
+draw_sphere_pts	visual_utils/visualize_utils.py	/^def draw_sphere_pts(pts, color=(0, 1, 0), fig=None, bgcolor=(0, 0, 0), scale_factor=0.2):$/;"	f
+eval_one_epoch	eval_utils/eval_utils.py	/^def eval_one_epoch(cfg, model, dataloader, epoch_id, logger, dist_test=False, save_to_file=False, result_dir=None):$/;"	f
+eval_single_ckpt	test.py	/^def eval_single_ckpt(model, test_loader, args, eval_output_dir, logger, epoch_id, dist_test=False):$/;"	f
+eval_utils	test.py	/^from eval_utils import eval_utils$/;"	i
+get_lr	train_utils/optimization/learning_schedules_fastai.py	/^    def get_lr(self):$/;"	m	class:CosineWarmupLR
+get_master	train_utils/optimization/fastai_optim.py	/^def get_master(layer_groups, flat_master: bool = False):$/;"	f
+get_no_evaluated_ckpt	test.py	/^def get_no_evaluated_ckpt(ckpt_dir, ckpt_record_file, args):$/;"	f
+glob	demo.py	/^import glob$/;"	i
+glob	test.py	/^import glob$/;"	i
+glob	train.py	/^import glob$/;"	i
+glob	train_utils/train_utils.py	/^import glob$/;"	i
+is_tuple	train_utils/optimization/fastai_optim.py	/^def is_tuple(x) -> bool: return isinstance(x, tuple)$/;"	f
+listify	train_utils/optimization/fastai_optim.py	/^def listify(p=None, q=None):$/;"	f
+load_data_to_gpu	demo.py	/^from pcdet.models import build_network, load_data_to_gpu$/;"	i
+load_data_to_gpu	eval_utils/eval_utils.py	/^from pcdet.models import load_data_to_gpu$/;"	i
+log_config_to_file	test.py	/^from pcdet.config import cfg, cfg_from_list, cfg_from_yaml_file, log_config_to_file$/;"	i
+log_config_to_file	train.py	/^from pcdet.config import cfg, cfg_from_list, cfg_from_yaml_file, log_config_to_file$/;"	i
+lr	train_utils/optimization/fastai_optim.py	/^    def lr(self) -> float:$/;"	m	class:OptimWrapper
+lr	train_utils/optimization/fastai_optim.py	/^    def lr(self, val: float) -> None:$/;"	m	class:OptimWrapper
+lr_lbmd	train_utils/optimization/__init__.py	/^    def lr_lbmd(cur_epoch):$/;"	f	function:build_scheduler
+lr_sched	train_utils/optimization/__init__.py	/^import torch.optim.lr_scheduler as lr_sched$/;"	i
+lr_sched	train_utils/optimization/learning_schedules_fastai.py	/^import torch.optim.lr_scheduler as lr_sched$/;"	i
+lrs	train_utils/optimization/learning_schedules_fastai.py	/^    lrs = []$/;"	v
+main	demo.py	/^def main():$/;"	f
+main	test.py	/^def main():$/;"	f
+main	train.py	/^def main():$/;"	f
+master2model	train_utils/optimization/fastai_optim.py	/^def master2model(model_params, master_params, flat_master: bool = False) -> None:$/;"	f
+math	train_utils/optimization/learning_schedules_fastai.py	/^import math$/;"	i
+matplotlib	train_utils/optimization/learning_schedules_fastai.py	/^    import matplotlib.pyplot as plt$/;"	i
+mayavi	visual_utils/visualize_utils.py	/^    import mayavi.mlab as mlab$/;"	i
+mayavi	visual_utils/visualize_utils.py	/^import mayavi.mlab as mlab$/;"	i
+mlab	visual_utils/visualize_utils.py	/^    import mayavi.mlab as mlab$/;"	i
+mlab	visual_utils/visualize_utils.py	/^import mayavi.mlab as mlab$/;"	i
+model_fn_decorator	train.py	/^from pcdet.models import build_network, model_fn_decorator$/;"	i
+model_g2master_g	train_utils/optimization/fastai_optim.py	/^def model_g2master_g(model_params, master_params, flat_master: bool = False) -> None:$/;"	f
+model_state_to_cpu	train_utils/train_utils.py	/^def model_state_to_cpu(model_state):$/;"	f
+mom	train_utils/optimization/fastai_optim.py	/^    def mom(self) -> float:$/;"	m	class:OptimWrapper
+mom	train_utils/optimization/fastai_optim.py	/^    def mom(self, val: float) -> None:$/;"	m	class:OptimWrapper
+moms	train_utils/optimization/learning_schedules_fastai.py	/^    moms = []$/;"	v
+new	train_utils/optimization/fastai_optim.py	/^    def new(self, layer_groups):$/;"	m	class:OptimWrapper
+nn	train.py	/^import torch.nn as nn$/;"	i
+nn	train_utils/optimization/__init__.py	/^import torch.nn as nn$/;"	i
+nn	train_utils/optimization/fastai_optim.py	/^from torch import nn$/;"	i
+np	demo.py	/^import numpy as np$/;"	i
+np	eval_utils/eval_utils.py	/^import numpy as np$/;"	i
+np	test.py	/^import numpy as np$/;"	i
+np	train_utils/optimization/learning_schedules_fastai.py	/^import numpy as np$/;"	i
+np	visual_utils/visualize_utils.py	/^import numpy as np$/;"	i
+num_children	train_utils/optimization/__init__.py	/^        def num_children(m: nn.Module) -> int:$/;"	f	function:build_optimizer
+opt	train_utils/optimization/learning_schedules_fastai.py	/^    opt = FakeOptim()  # 3e-3, wd=0.4, div_factor=10$/;"	v
+optim	train_utils/optimization/__init__.py	/^import torch.optim as optim$/;"	i
+optim	train_utils/optimization/__init__.py	/^import torch.optim.lr_scheduler as lr_sched$/;"	i
+optim	train_utils/optimization/learning_schedules_fastai.py	/^import torch.optim.lr_scheduler as lr_sched$/;"	i
+os	test.py	/^import os$/;"	i
+os	train.py	/^import os$/;"	i
+os	train_utils/train_utils.py	/^import os$/;"	i
+parameters_to_vector	train_utils/optimization/fastai_optim.py	/^from torch.nn.utils import parameters_to_vector$/;"	i
+parse_config	demo.py	/^def parse_config():$/;"	f
+parse_config	test.py	/^def parse_config():$/;"	f
+parse_config	train.py	/^def parse_config():$/;"	f
+partial	train_utils/optimization/__init__.py	/^from functools import partial$/;"	i
+partial	train_utils/optimization/learning_schedules_fastai.py	/^from functools import partial$/;"	i
+pcdet	train_utils/train_utils.py	/^        import pcdet$/;"	i
+pickle	eval_utils/eval_utils.py	/^import pickle$/;"	i
+plt	train_utils/optimization/learning_schedules_fastai.py	/^    import matplotlib.pyplot as plt$/;"	i
+re	test.py	/^import re$/;"	i
+read_defaults	train_utils/optimization/fastai_optim.py	/^    def read_defaults(self) -> None:$/;"	m	class:OptimWrapper
+read_val	train_utils/optimization/fastai_optim.py	/^    def read_val(self, key: str):$/;"	m	class:OptimWrapper
+repeat_eval_ckpt	test.py	/^def repeat_eval_ckpt(model, test_loader, args, eval_output_dir, logger, ckpt_dir, dist_test=False):$/;"	f
+repeat_eval_ckpt	train.py	/^from test import repeat_eval_ckpt$/;"	i
+rotate_points_along_z	visual_utils/visualize_utils.py	/^def rotate_points_along_z(points, angle):$/;"	f
+save_checkpoint	train_utils/train_utils.py	/^def save_checkpoint(state, filename='checkpoint'):$/;"	f
+schd	train_utils/optimization/learning_schedules_fastai.py	/^    schd = OneCycle(opt, 100, 3e-3, (0.95, 0.85), 10.0, 0.1)$/;"	v
+set_val	train_utils/optimization/fastai_optim.py	/^    def set_val(self, key: str, val, bn_groups: bool = True):$/;"	m	class:OptimWrapper
+split_bn_bias	train_utils/optimization/fastai_optim.py	/^def split_bn_bias(layer_groups):$/;"	f
+statistics_info	eval_utils/eval_utils.py	/^def statistics_info(cfg, ret_dict, metric, disp_dict):$/;"	f
+step	train_utils/optimization/fastai_optim.py	/^    def step(self) -> None:$/;"	m	class:OptimWrapper
+step	train_utils/optimization/fastai_optim.py	/^    def step(self):$/;"	m	class:FastAIMixedOptim
+step	train_utils/optimization/learning_schedules_fastai.py	/^    def step(self, step):$/;"	m	class:LRSchedulerStep
+time	eval_utils/eval_utils.py	/^import time$/;"	i
+time	test.py	/^import time$/;"	i
+torch	demo.py	/^import torch$/;"	i
+torch	eval_utils/eval_utils.py	/^import torch$/;"	i
+torch	offscreen.py	/^import torch$/;"	i
+torch	test.py	/^import torch$/;"	i
+torch	train.py	/^import torch$/;"	i
+torch	train.py	/^import torch.distributed as dist$/;"	i
+torch	train.py	/^import torch.nn as nn$/;"	i
+torch	train_utils/optimization/__init__.py	/^import torch.nn as nn$/;"	i
+torch	train_utils/optimization/__init__.py	/^import torch.optim as optim$/;"	i
+torch	train_utils/optimization/__init__.py	/^import torch.optim.lr_scheduler as lr_sched$/;"	i
+torch	train_utils/optimization/fastai_optim.py	/^import torch$/;"	i
+torch	train_utils/optimization/learning_schedules_fastai.py	/^import torch.optim.lr_scheduler as lr_sched$/;"	i
+torch	train_utils/train_utils.py	/^import torch$/;"	i
+torch	visual_utils/visualize_utils.py	/^import torch$/;"	i
+tqdm	eval_utils/eval_utils.py	/^import tqdm$/;"	i
+tqdm	train_utils/train_utils.py	/^import tqdm$/;"	i
+train_model	train.py	/^from train_utils.train_utils import train_model$/;"	i
+train_model	train_utils/train_utils.py	/^def train_model(model, optimizer, train_loader, model_func, lr_scheduler, optim_cfg,$/;"	f
+train_one_epoch	train_utils/train_utils.py	/^def train_one_epoch(model, optimizer, train_loader, model_func, lr_scheduler, accumulated_iter, optim_cfg,$/;"	f
+trainable_params	train_utils/optimization/fastai_optim.py	/^def trainable_params(m: nn.Module):$/;"	f
+visualize_pts	visual_utils/visualize_utils.py	/^def visualize_pts(pts, fig=None, bgcolor=(0, 0, 0), fgcolor=(1.0, 1.0, 1.0),$/;"	f
+wd	train_utils/optimization/fastai_optim.py	/^    def wd(self) -> float:$/;"	m	class:OptimWrapper
+wd	train_utils/optimization/fastai_optim.py	/^    def wd(self, val: float) -> None:$/;"	m	class:OptimWrapper
+zero_grad	train_utils/optimization/fastai_optim.py	/^    def zero_grad(self) -> None:$/;"	m	class:OptimWrapper
